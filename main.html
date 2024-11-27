@@ -2,22 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
     <title>Dealerships.lt</title>
 </head>
 <body>
-<header>Dealership.lt</header>
+<header><h1>Dealership.lt</h1></header>
 <section>
 <!--Dealershipai gali buti article su tekstu ir nuotraukom, nuoroda i kita psl-->
     <article>
         <a href="https://gariunai.lt/apie-autoturgu/"><h1>Dealership in Vilnius</h1></a>
-        <p>
+        <p class="highlight" id="firstHighlight">
             We sell the best cars in the Vilnius area! Come to our dealership for the best cars in the market!
         </p>
         <img src="https://www.lrt.lt/img/2019/10/04/524311-987749-1287x836.jpg">
     </article>
     <article>
         <a href="https://gariunai.lt/apie-autoturgu/"><h1>Toyota dealership in Warsaw</h1></a>
-        <p>
+        <p class="highlight">
             We are the best Toyota dealership in Warsaw, come and visit!
         </p>
         <img src="https://lh3.googleusercontent.com/gps-cs/APYa6Q_xykO4Kj7oXJWat8QAycmGE73cmRKwaSg_kQK4hEh2VkYX-lfO6cnUBeyunKNM_xHGoo31cK9k8Hd9qh2Y13e9nQ2uionVGXhHnhSx0xiHZLlxlc-r3IULPnaO7zbvtHeDGp2b=s680-w680-h510-rw">
@@ -28,8 +29,8 @@
     <tbody>
     <tr>
         <td rowspan="2"></td>
-        <td colspan="2">Toyota</td>
-        <td colspan="3">Volkswagen</td>
+        <td colspan="2" class="make">Toyota</td>
+        <td colspan="3" class="make">Volkswagen</td>
     </tr>
     <tr>
         <td>Prius</td>
@@ -66,15 +67,20 @@
 </table>
 <!--Listas gali buti highlightinti modeliai-->
 <h1>Cars that we recommend:</h1>
+<p>This is a list of cars that were approved by our experts that were named excellent cars for all buyers.</p>
 <ul>
-    <li>Volkswagen Gold</li>
+    <li>Volkswagen Golf</li>
+    <ul>
+        <li>Volkswagen Golf GTI</li>
+        <li>Volkswagen Golf R32</li>
+    </ul>
     <li>Audi A6</li>
     <li>Skoda Octavia</li>
     <li>Volvo S60</li>
 </ul>
 <!--Duomenu ivedimo forma ir saraso komponentas gali buti arba
 parduoti masina dealershipui arba contact me sectionas-->
-<h1>Become part of our team:</h1>
+<h3>Become part of our team:</h3>
 <form>
     <label for="fullname">Enter your full name:</label><br>
     <input type="text" id="fullname" name="fullname"><br>
@@ -86,8 +92,8 @@ parduoti masina dealershipui arba contact me sectionas-->
     <input type="date" id="dob" name="dob"><br>
     <label for="agreementbox">Check if you agree for us to contact you:</label><br>
     <input type="checkbox" id="agreementbox" name="agreementbox"><br>
-    <input type="submit">
+    <input type="submit" id="submitbutton">
 </form>
-<footer>Didlaukio g. 47, Vilnius</footer>
+<footer><h3>Didlaukio g. 47, Vilnius</h3> Lankymo valandos: I - V, 9:00 - 17:00</footer>
 </body>
 </html>
