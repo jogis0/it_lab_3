@@ -1,99 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
-    <title>Dealerships.lt</title>
-</head>
-<body>
-<header><h1>Dealership.lt</h1></header>
-<section>
-<!--Dealershipai gali buti article su tekstu ir nuotraukom, nuoroda i kita psl-->
-    <article>
-        <a href="https://gariunai.lt/apie-autoturgu/"><h1>Dealership in Vilnius</h1></a>
-        <p class="highlight" id="firstHighlight">
-            We sell the best cars in the Vilnius area! Come to our dealership for the best cars in the market!
-        </p>
-        <img src="https://www.lrt.lt/img/2019/10/04/524311-987749-1287x836.jpg">
-    </article>
-    <article>
-        <a href="https://gariunai.lt/apie-autoturgu/"><h1>Toyota dealership in Warsaw</h1></a>
-        <p class="highlight">
-            We are the best Toyota dealership in Warsaw, come and visit!
-        </p>
-        <img src="https://lh3.googleusercontent.com/gps-cs/APYa6Q_xykO4Kj7oXJWat8QAycmGE73cmRKwaSg_kQK4hEh2VkYX-lfO6cnUBeyunKNM_xHGoo31cK9k8Hd9qh2Y13e9nQ2uionVGXhHnhSx0xiHZLlxlc-r3IULPnaO7zbvtHeDGp2b=s680-w680-h510-rw">
-    </article>
-</section>
-<!--Lentele gali buti fuel efficiency pagal varikli ir marke gal-->
-<table>
-    <tbody>
-    <tr>
-        <td rowspan="2"></td>
-        <td colspan="2" class="make">Toyota</td>
-        <td colspan="3" class="make">Volkswagen</td>
-    </tr>
-    <tr>
-        <td>Prius</td>
-        <td>Corolla</td>
-        <td>Golf</td>
-        <td>Passat</td>
-        <td>Transporter</td>
-    </tr>
-    <tr>
-        <td>City</td>
-        <td>3.7</td>
-        <td>5.7</td>
-        <td>11.6</td>
-        <td>8.9</td>
-        <td>7.5</td>
-    </tr>
-    <tr>
-        <td>Highway</td>
-        <td>5</td>
-        <td>7.4</td>
-        <td>7.6</td>
-        <td>5.9</td>
-        <td>6.1</td>
-    </tr>
-    <tr>
-        <td>Average</td>
-        <td>4.1</td>
-        <td>6.7</td>
-        <td>8.1</td>
-        <td>7</td>
-        <td>6.6</td>
-    </tr>
-    </tbody>
-</table>
-<!--Listas gali buti highlightinti modeliai-->
-<h1>Cars that we recommend:</h1>
-<p>This is a list of cars that were approved by our experts that were named excellent cars for all buyers.</p>
-<ul>
-    <li>Volkswagen Golf</li>
-    <ul>
-        <li>Volkswagen Golf GTI</li>
-        <li>Volkswagen Golf R32</li>
-    </ul>
-    <li>Audi A6</li>
-    <li>Skoda Octavia</li>
-    <li>Volvo S60</li>
-</ul>
-<!--Duomenu ivedimo forma ir saraso komponentas gali buti arba
-parduoti masina dealershipui arba contact me sectionas-->
-<h3>Become part of our team:</h3>
-<form>
-    <label for="fullname">Enter your full name:</label><br>
-    <input type="text" id="fullname" name="fullname"><br>
-    <label for="useremail">Enter your email:</label><br>
-    <input type="email" id="useremail" name="useremail"><br>
-    <label for="userphone">Enter your phone number:</label><br>
-    <input type="tel" id="userphone" name="userphone"><br>
-    <label for="dob">Enter your date of birth:</label><br>
-    <input type="date" id="dob" name="dob"><br>
-    <label for="agreementbox">Check if you agree for us to contact you:</label><br>
-    <input type="checkbox" id="agreementbox" name="agreementbox"><br>
-    <input type="submit" id="submitbutton">
-</form>
-<footer><h3>Didlaukio g. 47, Vilnius</h3> Lankymo valandos: I - V, 9:00 - 17:00</footer>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <title>Dealerships.lt</title>
+    </head>
+    <body>
+        <header>Dealership.lt</header>
+        <nav>
+            <a href="#dealershipArticle">Dealerships</a>
+            <a href="#tableArticle">Table</a>
+            <a href="#recommendationArticle">Recommendations</a>
+            <a href="#joinusArticle">Join us</a>
+        </nav>
+        <section>
+            <h1>Dealerships</h1>
+        <!--Dealershipai gali buti article su tekstu ir nuotraukom, nuoroda i kita psl-->
+            <article id="dealershipArticle">
+                <h2>Dealership in Vilnius</h2>
+                <a href="https://gariunai.lt/apie-autoturgu/">Link</a>
+                <p class="highlight" id="firstHighlight">
+                    We sell the best cars in the Vilnius area! Come to our dealership for the best cars in the market!
+                </p>
+                <img src="https://www.lrt.lt/img/2019/10/04/524311-987749-1287x836.jpg" alt="An image of a dealership">
+                <h2>Toyota dealership in Warsaw</h2>
+                <a href="https://gariunai.lt/apie-autoturgu/">Link</a>
+                <p class="highlight">
+                    We are the best Toyota dealership in Warsaw, come and visit!
+                </p>
+                <img src="https://lh3.googleusercontent.com/gps-cs/APYa6Q_xykO4Kj7oXJWat8QAycmGE73cmRKwaSg_kQK4hEh2VkYX-lfO6cnUBeyunKNM_xHGoo31cK9k8Hd9qh2Y13e9nQ2uionVGXhHnhSx0xiHZLlxlc-r3IULPnaO7zbvtHeDGp2b=s680-w680-h510-rw" alt="An image of a dealership">
+            </article>
+        <!--Lentele gali buti fuel efficiency pagal varikli ir marke gal-->
+            <article id="tableArticle">
+                <h2>Toyota and Volkswagen comparison</h2>
+                <table>
+                    <tbody>
+                    <tr>
+                        <td rowspan="2"></td>
+                        <td colspan="2" class="make">Toyota</td>
+                        <td colspan="3" class="make">Volkswagen</td>
+                    </tr>
+                    <tr>
+                        <td>Prius</td>
+                        <td>Corolla</td>
+                        <td>Golf</td>
+                        <td>Passat</td>
+                        <td>Transporter</td>
+                    </tr>
+                    <tr>
+                        <td>City</td>
+                        <td>3.7</td>
+                        <td>5.7</td>
+                        <td>11.6</td>
+                        <td>8.9</td>
+                        <td>7.5</td>
+                    </tr>
+                    <tr>
+                        <td>Highway</td>
+                        <td>5</td>
+                        <td>7.4</td>
+                        <td>7.6</td>
+                        <td>5.9</td>
+                        <td>6.1</td>
+                    </tr>
+                    <tr>
+                        <td>Average</td>
+                        <td>4.1</td>
+                        <td>6.7</td>
+                        <td>8.1</td>
+                        <td>7</td>
+                        <td>6.6</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </article>
+            <article id="recommendationArticle">
+                <!--Listas gali buti highlightinti modeliai-->
+                <h2>Cars that we recommend:</h2>
+                <p>This is a list of cars that were approved by our experts that were named excellent cars for all buyers.</p>
+                <ul>
+                    <li>Volkswagen Golf
+                        <ul>
+                            <li>Volkswagen Golf GTI</li>
+                            <li>Volkswagen Golf R32</li>
+                        </ul>
+                    </li>
+                    <li>Audi A6</li>
+                    <li>Skoda Octavia</li>
+                    <li>Volvo S60</li>
+                </ul>
+            </article>
+            <article id="joinusArticle">
+                <!--Duomenu ivedimo forma ir saraso komponentas gali buti arba
+            parduoti masina dealershipui arba contact me sectionas-->
+                <h3>Become part of our team:</h3>
+                <form>
+                    <label for="fullname">Enter your full name:</label><br>
+                    <input type="text" id="fullname" name="fullname"><br>
+                    <label for="genderlist">Enter your gender</label><br>
+                    <select id="genderlist" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select><br>
+                    <label for="useremail">Enter your email:</label><br>
+                    <input type="email" id="useremail" name="useremail"><br>
+                    <label for="userphone">Enter your phone number:</label><br>
+                    <input type="tel" id="userphone" name="userphone"><br>
+                    <label for="dob">Enter your date of birth:</label><br>
+                    <input type="date" id="dob" name="dob"><br>
+                    <label for="agreementbox">Check if you agree for us to contact you:</label><br>
+                    <input type="checkbox" id="agreementbox" name="agreementbox"><br>
+                    <input type="submit" id="submitbutton"><br>
+                </form>
+            </article>
+        </section>
+        <footer>
+            <h3>Didlaukio g. 47, Vilnius</h3> Lankymo valandos: I - V, 9:00 - 17:00
+        </footer>
+    </body>
 </html>

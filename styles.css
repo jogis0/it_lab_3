@@ -1,3 +1,16 @@
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #a2a2a2;
+    padding: 10px;
+    gap: 10px;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 /*table style*/
 table , td, th {
     border: 1px solid #595959;
@@ -23,14 +36,14 @@ li {
     list-style-type: disc;
 }
 li li {
-    list-style-type: circle;
+    list-style-type: square;
 }
 
 /*child*/
-h1 {
+h2 {
     background-color: aqua;
 }
-a > h1 {
+a > h2 {
     background-color: yellow;
 }
 /*descendant ir child skirias, nes descendant turi egzistuoti kazkokios eiles ancestor,
@@ -89,7 +102,7 @@ p {
         height: 240px;
         width: 426px;
     }
-    h1 {
+    h2 {
         font-size: large;
     }
 }
